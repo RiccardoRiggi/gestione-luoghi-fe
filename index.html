@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="theme-color" content="#000000" />
+
+  <link rel="apple-touch-icon" href="/logo192.png" />
+
+  <link rel="manifest" href="/manifest.json" />
+
+  <title>Gestione luoghi</title>
+
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="css/argon-dashboard.css" rel="stylesheet">
+</head>
+
+<body class="g-sidenav-show bg-gray-100">
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+
+  <!--   Core JS Files   -->
+  <script src="/js/core/buttons.js"></script>
+  <script src="/js/core/popper.min.js"></script>
+  <script src="/js/core/bootstrap.min.js"></script>
+  <script src="/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="/js/plugins/chartjs.min.js"></script>
+  <script src="/js/argon-dashboard.js?v=2.0.4"></script>
+
+
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+ 
+</body>
+
+</html>

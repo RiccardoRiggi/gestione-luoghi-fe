@@ -1,0 +1,38 @@
+.fast-spin {
+  -webkit-animation: fa-spin 1.3s infinite linear;
+  animation: fa-spin 1.3s infinite linear;
+}
+
+.floating-btn {
+  position: fixed;
+  /* resta fisso sullo schermo */
+  bottom: 20px;
+  /* distanza dal bordo inferiore */
+  right: 20px;
+  /* distanza dal bordo destro */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /* forma circolare */
+  background-color: #1900ff;
+  color: white;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 73vh;
+}
+
+.leaflet-div-icon {
+  background: transparent !important;
+  border: none !important;
+}
+
+.floating-btn:hover {
+  transform: scale(1.1);
+}
